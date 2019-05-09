@@ -1,32 +1,37 @@
 header{
-	width: 100%;
-	height: 10%;
-	background: #9CF5C1;
-	top: 0px;
-	left: 0px;
-	clear: both;
 	position: absolute;
-	text-align: left;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 110%;
-	line-height: normal;
-	color: #787575;
+	top: 0;
+	width: 100%;
+	height: 15%;
+	background: #9CF5C1;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+header::after{
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 .containerTop{
-	top: 0px;
-	position: absolute;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
 
 .topLogo{
+	/*background: lightyellow;*/
 	position: absolute;
-	width: 8%;
+	width: 15%;
 	height: 100%;
 	float: left;
+	margin-top: 0px;
 }
 
 .topLogo img{
@@ -34,59 +39,25 @@ header{
 }
 
 .title{
-	position: absolute;
-	width: 15%;
-	height: 100%;
-	margin-left: 8%;
-	float: left;
-}
-
-.title h1{
-	height: 100%;
-	color: #0E921B;
-	font-family: 'Abel', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3vw;
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 0;
+	display: none;
 }
 
 .navBar{
-	position: absolute;
-	width: 85%;
 	height: 100%;
-	float: right;
-	margin-left: 23%;
-	display: flex;
-	padding-bottom: 0;
-	align-items: center;
-	flex-flow: row wrap;
+	font-size: 3vh;
+	padding-bottom: 2%;
 }
 
 .mainNav{
-	width: 80%;
 	list-style-type: none;
-	display: flex;
-    margin-right: 5%;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 
 .mainNav li{
-	margin: 0;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1vw;
-	line-height: normal;
-}
-
-.navLinks{
-	text-decoration: none;
-	color: #787575;
-	margin-left: 40px;
+	text-align: center;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	flex-flow: row nowrap;
+	flex-direction: row;
 }
 
 li .navLinks:hover {
@@ -94,38 +65,100 @@ li .navLinks:hover {
 	font-weight: bold;
 }
 
-.containerContent{
-	height: 100%;
-	width: 100%;
-	background: red;
+.navLinks{
+	text-decoration: none;
+	color: #787575;
+}
+
+@media screen and (min-width: 768px){
+	header{
+
+	}
+
+	.title{
+		display: block;
+		margin-left: 15%;
+		line-height: 100%;
+		width: 30%;
+		float: left;
+		height: 100%;
+		padding-top: 3vh;
+	}
+
+	.title p{
+		height: 100%;
+		color: #0E921B;
+		font-family: 'Abel', sans-serif;
+		font-size: 3vw;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1.5;
+		margin: auto;
+		bottom: 0;
+	}
+
+	.navBar{
+		height: 100%;
+		margin-left: 45%;
+		padding-bottom: 0;
+		width: 55%;
+		display: block;
+		font-size: 3vh;
+	}
+
+	.mainNav{
+		height: 100%;
+		margin-top: auto;
+		margin-bottom: auto;
+		list-style-type: none;
+		justify-content: flex-end;
+		flex-direction: row;
+		display: flex;
+	}
+
+	.mainNav li{
+		text-align: center;
+		margin: auto;
+		font-family: 'Roboto', sans-serif;
+		flex-flow: row nowrap;
+		flex-direction: row;
+		flex: 1;
+	}
+
+	li .navLinks:hover {
+		color: #545151;
+		font-weight: bold;
+	}
+
+	.navLinks{
+		text-decoration: none;
+		color: #787575;
+	}
 }
 
 footer{
 	width: 100%;
 	height: 5%;
 	background: #9CF5C1;
-	clear: both;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	text-align: right;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1vw;
-	line-height: normal;
-	color: #787575;
-	flex-direction: row;
+	box-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+	bottom: 0;
+	position: absolute;
 }
 
 .containerBottom{
 	width: 100%;
 	height: 100%;
-	position: fixed;
-
+	display: flex;
+	margin-right: 1%;
+	font-family: 'Roboto', sans-serif;
+	flex-flow: row nowrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex: 1;
+	color: #787575;
 }
 
 .containerBottom p{
-	font-weight: bold;
-	margin-right: 5%;
+	margin: 3px;
+	font-size: 3vh;
 }
