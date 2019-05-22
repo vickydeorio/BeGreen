@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>beGreen()</title>
+    <link rel="icon" href="imgs/icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+<header>
+    <div class="containerTop">
+        <div class="topLogo">
+            <img src="imgs/logo.png">
+        </div>
+
+        <div class="title">
+            <p>beGreen<strong>()</strong></p>
+        </div>
+
+        <div class="navBar">
+            <ul class="mainNav">
+                <li>
+                    <a href="home.html" class="navLinks">Home</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html" class="navLinks">AboutUs</a>
+                </li>
+                <li>
+                    <a href="tech.html" class="navLinks">Technologies</a>
+                </li>
+                <li>
+                    <a href="greenTips.html" class="navLinks">GreenTips</a>
+                </li>
+                <li>
+                    <a href="ourAPP.html" class="navLinks">OurAPP</a>
+                </li>
+                <li>
+                    <a href="contactUs.html" class="navLinks">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div id="wrapper" class="containerContent">
+    <div class="breadcrumb">
+        <p>
+            <a href="home.html">be green() </a> > <a href="contactUs.html"> contactUs</a>
+        </p>
+    </div>
+    <div class="container">
+        <h1>
+            Contact Us!
+        </h1>
+        <form method="post" action="mailto:vicky.deorio@gmail.com">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nome</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Digite seu nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Sobrenome</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Digite seu sobrenome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Assunto</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="Crítica">Crítica</option>
+                        <option value="Conversa">Conversa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Mensagem</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Deixe sua mensagem..." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="containerBottom">
+            <p>
+                contatos principais
+            </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

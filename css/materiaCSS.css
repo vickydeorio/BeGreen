@@ -1,0 +1,14 @@
+.container img{
+    width: 250px;
+    height: 250px;
+    margin-left: 30%;
+}
+
+h1{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.container{
+    align-items: center;
+}

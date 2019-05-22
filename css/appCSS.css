@@ -1,0 +1,33 @@
+.text{
+    align-self: flex-end;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line .text{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.line{
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: stretch;
+}
+
+.line .img{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}

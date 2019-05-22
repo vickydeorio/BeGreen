@@ -1,0 +1,55 @@
+.intro{
+    margin: 0 auto;
+    width: 75%;
+}
+
+.line{
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: stretch;
+    width: 75%;
+    height: 10%;
+}
+
+.line h1{
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.line p{
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.line .text{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.line .img{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #0E921B;
+}
+
+a:hover{
+    color: #0e7b1b;
+    font-weight: bold;
+}

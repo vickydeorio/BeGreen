@@ -1,158 +1,200 @@
+/*Cabeçalho da página*/
 header{
+	/*Obedecerá o tamanho de seu elemento pai, o body*/
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 15%;
-	/*background: #9CF5C1;*/
+	/*Efeito sombreado*/
 	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
-
-header::after{
-	clear: both;
-	content: " ";
-	display: block;
-	height: 0;
-}
-
 *{
+	/*O width e height (propriedades min/max) incluem content, padding e border*/
 	box-sizing: border-box;
+	/*Afeta todos os elementos da página, tira as margens, padding*/
 	padding: 0;
 	margin: 0;
 }
 
 .containerTop{
+	/* Terá a mesma altura e largura do elemento pai, o header*/
 	height: 100%;
 	width: 100%;
 }
 
 .topLogo{
-	background: lightyellow;
-	position: absolute;
+	/*TopLogo ocupará 15% de largura e 100% da altura de seu elemento pai, containerTop*/
 	width: 15%;
 	height: 100%;
+	/*Sua posição é relativa ao elemento pai, se ele diminui este também diminuirá*/
+	position: absolute;
+	/*Alinhado a esquerda*/
 	float: left;
+	/*sem margem*/
 	margin-top: 0px;
 }
 
 .topLogo img{
+	/*Terá a mesma altura que seu elemento pai, o topLogo*/
 	height: 100%;
 }
 
 .title{
-	display: none;
+	/* Tem a mesma altura e 30% da largura de seu elemento pai, o containerTop*/
+	width: 30%;
+	height: 100%;
+	/*Transforma o elemento em um bloco, começará em uma nova linha e terá a mesma largura do pai*/
+	display: block;
+	/*A margem esquerda tem o mesmo tamanho da div topLogo, faz com que ela fique ao lado da mesma e não sobre ela*/
+	margin-left: 15%;
+	/*Alinhado à esquerda*/
+	float: left;
+	/*Padding para não ficar grudado no topo da página*/
+	padding-top: 3vh;
+}
+
+.title p{
+	height: 100%;
+	color: #0E921B;
+	font-family: 'Abel', sans-serif;
+	font-size: 3vw;
+	/*Transforma o elemento em um bloco, que ficará na mesma linha (Não pula linha como display: block;)*/
+	display: inline-block;
+	/*Deixa o elemento alinhado verticalmente no meio, em relação ao seu elemento pai, o .title*/
+	vertical-align: middle;
+	line-height: 1.5;
+	margin: auto;
+	bottom: 0;
 }
 
 .navBar{
 	height: 100%;
-	font-size: 4vh;
-	padding-bottom: 2%;
-}
-
-.navbar-toggle {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	cursor: pointer;
-	color: rgba(255,255,255,0.8);
-	font-size: 24px;
+	margin-left: 45%;
+	padding-bottom: 0;
+	width: 55%;
+	/*Transforma o elemento em um bloco*/
+	display: block;
+	font-size: 3vh;
 }
 
 .mainNav{
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	/*Anula o estilo default de uma lista*/
 	list-style-type: none;
+	/*Posiciona o conteúdo no final do "container", no caso no final da div*/
+	justify-content: flex-end;
+	display: flex;
 }
 
 .mainNav li{
+	/*Define nosso estilo personalizado das opções*/
 	text-align: center;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
-	flex-flow: row nowrap;
-	flex-direction: row;
+	/*Flex é responsável para que os elementos filhos se adequem ao tamanho quem tem disponível (de acordo com os elementos pais)*/
+	flex: 1;
 }
 
-li .navLinks:hover {
+.navLinks:hover {
+	/*A propriedade :hover, pega o evento de quando passamos o mouse pelo elemento*/
+	/*Dessa forma podemos alterar a cor do elemento quando o mouse passar por ele, por exemplo*/
 	color: #545151;
 	font-weight: bold;
 }
 
 .navLinks{
+	/*Retira a decoração da tag a, de link (default: Azul, sublinhado e etc)*/
 	text-decoration: none;
 	color: #787575;
 }
 
-@media screen and (min-width: 768px){
-	header{
+.containerContent{
+	/*O top é do mesmo tamanho do header, assim o conteúdo só começará em baixo do cabeçalho,
+	e não por cima dele*/
+	top: 15%;
+	/*Obedecerá o tamanho de seu elemento pai, o body*/
+	position: absolute;
+	/*Não tem 100% da altura de seu pai pois descontamos as alturas do cabeçalho e do rodapé*/
+	height: 80%;
+	width: 100%;
+}
 
-	}
+.containerContent img{
+	/*Aqui declaramos uma altura e largura default para as imagens da página*/
+	width: 350px;
+	height: 250px;
+}
 
-	.title{
-		display: block;
-		margin-left: 15%;
-		line-height: 100%;
-		width: 30%;
-		float: left;
-		height: 100%;
-		padding-top: 3vh;
-	}
+.containerContent h1{
+	/*Aqui declaramos um estilo que todos os elementos h1 que estejam dentro do containerContent obedecerão*/
+	color: #0E921B;
+	font-family: 'Abel', sans-serif;
+	font-size: 3vw;
+	display: block;
+	line-height: 1.5;
+}
 
-	.title p{
-		height: 100%;
-		color: #0E921B;
-		font-family: 'Abel', sans-serif;
-		font-size: 3vw;
-		display: inline-block;
-		vertical-align: middle;
-		line-height: 1.5;
-		margin: auto;
-		bottom: 0;
-	}
+.containerContent p{
+	/*Aqui declaramos um estilo que todos os elementos p que estejam dentro do containerContent obedecerão*/
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5vw;
+	text-align: center;
+	color: #787575;
+}
 
-	.navBar{
-		height: 100%;
-		margin-left: 45%;
-		padding-bottom: 0;
-		width: 55%;
-		display: block;
-		font-size: 3vh;
-	}
+.breadcrumb{
+	display: block;
+	width: 40%;
+	font-weight: bold;
+}
 
-	.mainNav{
-		height: 100%;
-		margin-top: auto;
-		margin-bottom: auto;
-		list-style-type: none;
-		justify-content: flex-end;
-		flex-direction: row;
-		display: flex;
-	}
+.breadcrumb a{
+	color: #787575;
+	text-decoration: none;
+}
 
-	.mainNav li{
-		text-align: center;
-		margin: auto;
-		font-family: 'Roboto', sans-serif;
-		flex-flow: row nowrap;
-		flex-direction: row;
-		flex: 1;
-	}
+.breadcrumb a:hover{
+	font-weight: bold;
+	color: #545151;
+}
 
-	li .navLinks:hover {
-		color: #545151;
-		font-weight: bold;
-	}
-
-	.navLinks{
-		text-decoration: none;
-		color: #787575;
-	}
+h1{
+	/*Aqui declaramos um estilo que todos os elementos h1 obedecerão*/
+	height: 100%;
+	color: #0E921B;
+	font-family: 'Abel', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3vw;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 footer{
 	width: 100%;
 	height: 5%;
-	/*background: #9CF5C1;*/
-	/*box-shadow: 1px 0 0 0 rgba(0,0,0,0.15);*/
-	box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.15);
+	/*box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.15);*/
 	bottom: 0;
+    left: 0;
 	position: absolute;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+div.body-content{
+    padding-bottom: 5%;
 }
 
 .containerBottom{

@@ -1,0 +1,48 @@
+h1{
+    font-weight: bold;
+}
+
+.item h1{
+    text-align: initial;
+    font-size: 2vw;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.item p{
+    text-align: end;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+i{
+    color: #0E921B;
+}
+
+a{
+    text-decoration: none;
+    color: #545151;
+}
+
+a:hover{
+    color: #545151;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #666;
+    text-align: -webkit-right;
+    display: table;
+    font-family: 'Roboto Mono', monospace;
+    color: #787575;
+    margin: auto;
+}
+thead {
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}

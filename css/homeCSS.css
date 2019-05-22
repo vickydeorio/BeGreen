@@ -1,0 +1,36 @@
+.text{
+    display: inline-block;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.text p{
+    text-align: left;
+}
+
+.text a{
+    text-decoration: none;
+    color: #787575;
+}
+
+.text a:hover{
+    color: #545151;
+    font-weight: bold;
+}
+
+.img{
+    margin-top: 5vw;
+    display: inline-block;
+    background: cornflowerblue;
+    width: 48%;
+    margin-right: 3%;
+    float: right;
+}
+
+.container {
+    margin: 1% 3% 3% 3%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 48%;
+}
