@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd6b8c85-e62b-47a9-9295-7042e9f89177" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/contactUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greenTips.html" beforeDir="false" afterPath="$PROJECT_DIR$/greenTips.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materia1.html" beforeDir="false" afterPath="$PROJECT_DIR$/materia1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materia2.html" beforeDir="false" afterPath="$PROJECT_DIR$/materia2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/model.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ourAPP.html" beforeDir="false" afterPath="$PROJECT_DIR$/ourAPP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech.html" beforeDir="false" afterPath="$PROJECT_DIR$/tech.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contactUs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="9" column="198" selection-start-line="9" selection-start-column="198" selection-end-line="9" selection-end-column="198" />
+            <state relative-caret-position="489">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -119,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/materia1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -160,7 +151,6 @@
         <option value="$PROJECT_DIR$/css/homeCSS.css" />
         <option value="$PROJECT_DIR$/css/tipsCSS.css" />
         <option value="$PROJECT_DIR$/greenTips.html" />
-        <option value="$PROJECT_DIR$/contactUs.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/materia2.html" />
         <option value="$PROJECT_DIR$/model.html" />
@@ -169,6 +159,7 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/tech.html" />
         <option value="$PROJECT_DIR$/materia1.html" />
+        <option value="$PROJECT_DIR$/contactUs.html" />
       </list>
     </option>
   </component>
@@ -241,17 +232,18 @@
       <option name="presentableId" value="Default" />
       <updated>1557165770910</updated>
       <workItem from="1557165772271" duration="31440000" />
-      <workItem from="1558462832330" duration="16672000" />
+      <workItem from="1558462832330" duration="17085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48112000" />
+    <option name="totallyTimeSpent" value="48525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4229692" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4229692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -335,13 +327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contactUs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="9" column="198" selection-start-line="9" selection-start-column="198" selection-end-line="9" selection-end-column="198" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -409,6 +394,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contactUs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
         </state>
       </provider>
     </entry>
